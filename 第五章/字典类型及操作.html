@@ -461,7 +461,7 @@
                 <a href="../第八章/第三方库.html">
             
                     
-                    第八章:Python第三方库
+                    第八章:第三方库
             
                 </a>
             
@@ -626,193 +626,6 @@ capitals = {<span class="hljs-string">&apos;&#x6E56;&#x5357;&apos;</span>:<span 
 <p>&#x200B;    &#xB7;&#x7EDF;&#x8BA1;&#x6B21;&#x6570;</p>
 <p>&#x200B;    &#xB7;&#x5143;&#x7D20;&#x904D;&#x5386;</p>
 <p>&#x200B;    </p>
-<hr>
-<h1 id="&#x4E60;&#x9898;&#x5DE9;&#x56FA;">&#x4E60;&#x9898;&#x5DE9;&#x56FA;</h1>
-<p>&#x4EE5;&#x4E0B;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#xFF08;&#xFF09;</p>
-<pre><code class="lang-python">ss=set(<span class="hljs-string">&quot;htslbht&quot;</span>)
-sorted(ss)
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> ss:
-    print(i,end=<span class="hljs-string">&quot;&quot;</span>)
-</code></pre>
-<p>A hlbst</p>
-<p>B htslbht</p>
-<p>C tsblth</p>
-<p>D hhlstt</p>
-<p>&#x7B54;&#x6848; A</p>
-<p>&#x4E0D;&#x662F;Python&#x7EC4;&#x5408;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A&#x5143;&#x7EC4;&#x7C7B;&#x578B;</p>
-<p>B &#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;</p>
-<p>C &#x6570;&#x7EC4;&#x7C7B;&#x578B;</p>
-<p>D &#x5217;&#x8868;&#x7C7B;&#x578B;</p>
-<p>&#x7B54;&#x6848; C</p>
-<p>&#x4EE5;&#x4E0B;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#xFF08;&#xFF09;</p>
-<pre><code class="lang-python">ls=[<span class="hljs-string">&apos;&#x7EFF;&#x8336;&apos;</span>&#xFF0C;<span class="hljs-string">&apos;&#x4E4C;&#x9F99;&#x8336;&apos;</span>&#xFF0C;<span class="hljs-string">&apos;&#x7EA2;&#x8336;&apos;</span>&#xFF0C;<span class="hljs-string">&apos;&#x767D;&#x8336;&apos;</span>&#xFF0C;<span class="hljs-string">&apos;&#x9ED1;&#x8336;&apos;</span>]
-
-x=&#x201C;&#x4E4C;&#x9F99;&#x8336;&#x201D;
-
-print(ls.index(x,<span class="hljs-number">0</span>))
-</code></pre>
-<p>A -3</p>
-<p>B 0</p>
-<p>C 2</p>
-<p>D 1</p>
-<p>&#x7B54;&#x6848; D</p>
-<p>&#x5173;&#x4E8E;&#x5B57;&#x5178;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x9519;&#x8BEF;&#x7684;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A &#x5B57;&#x5178;&#x7684;&#x5143;&#x7D20;&#x4EE5;&#x952E;&#x4E3A;&#x7D22;&#x5F15;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;</p>
-<p>B &#x5B57;&#x5178;&#x7684;&#x4E00;&#x4E2A;&#x952E;&#x53EF;&#x4EE5;&#x5BF9;&#x5E94;&#x591A;&#x4E2A;&#x503C;</p>
-<p>C &#x5B57;&#x5178;&#x7684;&#x957F;&#x5EA6;&#x662F;&#x53EF;&#x53D8;&#x7684;</p>
-<p>D &#x5B57;&#x5178;&#x662F;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x7ED3;&#x5408;&#xFF0C;&#x952E;&#x503C;&#x5BF9;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x987A;&#x5E8F;</p>
-<p>&#x7B54;&#x6848; B</p>
-<p>&#x4EE5;&#x4E0B;&#x7A0B;&#x5E8F;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;</p>
-<pre><code class="lang-python">dd={<span class="hljs-string">&apos;a&apos;</span>:<span class="hljs-number">90</span>,<span class="hljs-string">&apos;b&apos;</span>:<span class="hljs-number">87</span>,<span class="hljs-string">&apos;c&apos;</span>:<span class="hljs-number">93</span>}
-print([[dd[x],x]] <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> sorted(dd))
-</code></pre>
-<p>A  [[93,&apos;c&apos;],[90,&apos;a&apos;].[&apos;87&apos;,&apos;b&apos;]]</p>
-<p>B [[90,&apos;a&apos;],[87,&apos;b&apos;].[&apos;93&apos;,&apos;c&apos;]]</p>
-<p>C  [[87,&apos;b&apos;],[90,&apos;a&apos;].[&apos;93&apos;,&apos;c&apos;]]</p>
-<p>D [[90,a],[87,b].[93,c]]</p>
-<p>&#x7B54;&#x6848; B</p>
-<p>&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x662F;&#xFF08;&#xFF09;</p>
-<pre><code class="lang-python">dd={&#x2018;chinese&#x2019;:<span class="hljs-number">200</span>,<span class="hljs-string">&apos;pe&apos;</span>:<span class="hljs-number">187</span>,<span class="hljs-string">&apos;Gana&apos;</span>:<span class="hljs-number">930</span>}
-
-print(sorted(dd.keys()))
-</code></pre>
-<p>A dict_keys([&apos;Gana&apos;,&apos;chinese&apos;,&apos;pe&apos;])</p>
-<p>B &apos;Gana&apos;,&apos;Chinese&apos;,&apos;pe&apos;</p>
-<p>C [&apos;Gana&apos;,&apos;chinese&apos;,&apos;pe&apos;]</p>
-<p>D &#x62A5;&#x9519;</p>
-<p>&#x7B54;&#x6848; C</p>
-<p>&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x662F;&#xFF08;&#xFF09;</p>
-<pre><code class="lang-python">d={<span class="hljs-number">1</span>:<span class="hljs-number">10</span>,<span class="hljs-number">2</span>:<span class="hljs-number">2</span>,<span class="hljs-number">3</span>:<span class="hljs-number">30</span>}
-print(d.get(<span class="hljs-number">3</span>,<span class="hljs-number">99</span>))
-</code></pre>
-<p>A 99</p>
-<p>B 100</p>
-<p>C 30</p>
-<p>D 2</p>
-<p>&#x7B54;&#x6848; C</p>
-<p>&#x4EE5;&#x4E0B;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#xFF08;&#xFF09;</p>
-<pre><code class="lang-python">ls=[]
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">(n)</span>:</span>
-    ls.append(n)
-run(<span class="hljs-number">5</span>)
-print(ls)
-</code></pre>
-<p>A [10]</p>
-<p>B UnboundLocallError</p>
-<p>C [10,5]</p>
-<p>D None</p>
-<p>&#x7B54;&#x6848; C</p>
-<p>&#x4EE5;&#x4E0B;&#x7A0B;&#x5E8F;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x662F;&#xFF08;&#xFF09;</p>
-<pre><code class="lang-python">ls=[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
-lt=[<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>]
-print(ls+lt)
-</code></pre>
-<p>A [1,2,3,4,5,6]</p>
-<p>B [1,2,3,[4,5,6]]</p>
-<p>C [4,5,6]</p>
-<p>D [5,7,9]</p>
-<p>&#x7B54;&#x6848; A</p>
-<p>&#x4E0B;&#x9762;&#x8BED;&#x53E5;&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#x662F;&#xFF08;&#xFF09;</p>
-<pre><code class="lang-python">example=&#x2018;Baidu Translation <span class="hljs-keyword">is</span> an online translation service&#x2019;
-print(len(example.split(<span class="hljs-string">&apos;a&apos;</span>)))
-</code></pre>
-<p>A 6</p>
-<p>B 8</p>
-<p>C 7</p>
-<p>D 9</p>
-<p>&#x7B54;&#x6848;  C</p>
-<p>&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x662F;&#xFF08;&#xFF09;</p>
-<pre><code class="lang-python">dic={<span class="hljs-number">90</span>:<span class="hljs-string">&quot;Aele&quot;</span>,<span class="hljs-number">87</span>:<span class="hljs-string">&apos;Bob&apos;</span>,<span class="hljs-number">93</span>:<span class="hljs-string">&apos;laba&apos;</span>}
-print(dic.pop(<span class="hljs-number">90</span>,<span class="hljs-number">-1</span>),len(dic))
-</code></pre>
-<p>A Aele 3</p>
-<p>B -1 3</p>
-<p>C Aele 2</p>
-<p>D -1 2</p>
-<p>&#x7B54;&#x6848; C</p>
-<p>&#x4EE5;&#x4E0B;&#x5173;&#x4E8E;Python&#x7684;&#x63CF;&#x8FF0;&#x6B63;&#x786E;&#x7684;&#x662F;()</p>
-<p>A &#x5B57;&#x5178;&#x7684;&#x521B;&#x5EFA;&#x5FC5;&#x987B;&#x4F7F;&#x7528; dict&#xFF08;&#xFF09;&#x51FD;&#x6570;</p>
-<p>B &#x5217;&#x8868;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x5C5E;&#x4E8E;&#x5E8F;&#x5217;&#xFF0C;&#x4F46;&#x5143;&#x7EC4;&#x4E0D;&#x5C5E;&#x4E8E;&#x5E8F;&#x5217;</p>
-<p>C Python&#x53EA;&#x6709;&#x4E00;&#x79CD;&#x5185;&#x7F6E;&#x7684;&#x6620;&#x5C04;&#x7C7B;&#x578B;&#xFF0C;&#x5C31;&#x662F;&#x5B57;&#x5178;</p>
-<p>D &#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5207;&#x7247;&#x8D4B;&#x503C;</p>
-<p>&#x7B54;&#x6848; C</p>
-<p>&#x4EE5;&#x4E0B;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#xFF08;&#xFF09;</p>
-<pre><code class="lang-python">ss=[<span class="hljs-string">&apos;e&apos;</span>,<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-string">&apos;b&apos;</span>,<span class="hljs-string">&apos;s&apos;</span>,<span class="hljs-string">&apos;I&apos;</span>,<span class="hljs-string">&apos;p&apos;</span>]
-<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(ss)):
-    print(max(ss),end=<span class="hljs-string">&apos;&apos;</span>,)
-    ss.remove(max(ss))
-</code></pre>
-<p>A s,p,l,</p>
-<p>B s,p,l,h,e,b</p>
-<p>C s,p,l,h,e,b,</p>
-<p>D s,p,l</p>
-<p>&#x7B54;&#x6848; C</p>
-<p>&#x8BBE;s1={1,2,4,7}&#xFF0C;s2={2,3,4} ,s1-s2&#x7684;&#x503C;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A {2&#xFF0C;4}</p>
-<p>B {1,3,7}</p>
-<p>C {1,7}</p>
-<p>D {1,2,3,4,7}</p>
-<p>&#x7B54;&#x6848;C</p>
-<p>&#x6267;&#x884C;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#xFF0C;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x662F;&#xFF08;&#xFF09;</p>
-<pre><code class="lang-python">aSet={<span class="hljs-number">1</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>}
-bSet={<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>}
-print(aSet &amp; bSet)
-print(bSet -aSet)
-</code></pre>
-<p>A {5,7} {2,4}</p>
-<p>B {1,2,4,5,7} {1,2,4,8}</p>
-<p>C {2,4} {5,7}</p>
-<p>D {5,7} {1,2,4,8}</p>
-<p>&#x7B54;&#x6848;A</p>
-<p>&#x4E0B;&#x9762;&#x9009;&#x9879;&#x4E2D;&#x5173;&#x4E8E;&#x5217;&#x8868;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x8BF4;&#x6CD5;&#x9519;&#x8BEF;&#x7684;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A &#x5217;&#x8868;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x6CA1;&#x6709;&#x56FA;&#x5B9A;&#x5927;&#x5C0F;</p>
-<p>B &#x7528;&#x4E8E;&#x7EDF;&#x8BA1;&#x5B57;&#x7B26;&#x4E32;string&#x957F;&#x5EA6;&#x7684;&#x65B9;&#x6CD5;&#x662F;string.length()</p>
-<p>C &#x5217;&#x8868;&#x53EF;&#x4EE5;&#x5B58;&#x653E;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;</p>
-<p>D &#x5B57;&#x7B26;&#x4E32;&#x5177;&#x6709;&#x4E0D;&#x53EF;&#x53D8;&#x6027;&#xFF0C;&#x521B;&#x5EFA;&#x540E;&#x5176;&#x503C;&#x4E0D;&#x80FD;&#x6539;&#x53D8;</p>
-<p>&#x7B54;&#x6848; B</p>
-<p>&#x4E0B;&#x5217;&#x4E0D;&#x5C5E;&#x4E8E;&#x5904;&#x7406;Python&#x4E2D;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A pop</p>
-<p>B replace</p>
-<p>C get&#xFF08;&#xFF09;</p>
-<p>D popitem()</p>
-<p>&#x7B54;&#x6848; B</p>
-<p>&#x4E0B;&#x5217;&#x8BF4;&#x6CD5;&#x6B63;&#x786E;&#x7684;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A set()&#x53EF;&#x4EE5;&#x5C06;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x8F6C;&#x4E3A;&#x96C6;&#x5408;&#x7C7B;&#x578B;</p>
-<p>B remove&#xFF08;&#xFF09;&#x65B9;&#x6CD5;&#x5220;&#x9664;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x4E0D;&#x7BA1;&#x5143;&#x7D20;&#x5B58;&#x5728;&#x4E0D;&#x5B58;&#x5728;&#x90FD;&#x4E0D;&#x62A5;&#x9519;</p>
-<p>C &#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E0D;&#x53EF;&#x91CD;&#x590D;&#xFF0C;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x53EA;&#x80FD;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x6570;&#x636E;&#x7C7B;&#x578B;</p>
-<p>D &#x96C6;&#x5408;&#x5143;&#x7D20;&#x662F;&#x6709;&#x5E8F;</p>
-<p>&#x7B54;&#x6848; C</p>
-<p>&#x4E0B;&#x9762;&#x5173;&#x4E8E;&#x5143;&#x7EC4;&#x63CF;&#x8FF0;&#x6B63;&#x786E;&#x7684;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A &#x5143;&#x7EC4;&#x548C;&#x5217;&#x8868;&#x76F8;&#x4F3C;&#xFF0C;&#x6240;&#x6709;&#x80FD;&#x5BF9;&#x5217;&#x8868;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x90FD;&#x53EF;&#x4EE5;&#x5BF9;&#x5143;&#x7EC4;&#x8FDB;&#x884C;</p>
-<p>B &#x521B;&#x5EFA;&#x5143;&#x7EC4;&#x65F6;&#xFF0C;&#x82E5;&#x5143;&#x7EC4;&#x4E2D;&#x4EC5;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x540E;&#x9762;&#x53EF;&#x4EE5;&#x90E8;&#x6DFB;&#x52A0;&#x9017;&#x53F7;</p>
-<p>C &#x5143;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E0D;&#x80FD;&#x88AB;&#x4FEE;&#x6539;</p>
-<p>D &#x591A;&#x4E2A;&#x5143;&#x7D20;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;</p>
-<p>&#x7B54;&#x6848;C</p>
-<p>&#x4E0B;&#x9762;&#x5173;&#x4E8E;Python&#x63CF;&#x8FF0;&#x6B63;&#x786E;&#x7684;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A&#x5217;&#x8868;&#x7684;&#x4E0B;&#x6807;&#x662F;&#x4ECE;1&#x5F00;&#x59CB;</p>
-<p>B &#x5143;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x3001;&#x5220;&#x9664;&#x3001;&#x8FDE;&#x63A5;</p>
-<p>C &#x5B57;&#x5178;&#x4E2D;&#x7684;&#x952E;&#x53EA;&#x80FD;&#x662F;&#x6574;&#x6570;&#x3001;&#x5B57;&#x7B26;&#x4E32;</p>
-<p>D &#x96C6;&#x5408;&#x5206;&#x4E3A;&#x53EF;&#x53D8;&#x96C6;&#x5408;&#x548C;&#x4E0D;&#x53EF;&#x53D8;&#x96C6;&#x5408;&#xFF0C;&#x53EF;&#x53D8;&#x96C6;&#x5408;&#x7684;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;</p>
-<p>&#x7B54;&#x6848;  D</p>
-<p>&#x4E0B;&#x9762;&#x5173;&#x4E8E;Python&#x5217;&#x8868;&#x63CF;&#x8FF0;&#x9519;&#x8BEF;&#x7684;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A &#x5217;&#x8868;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x88AB;&#x4FEE;&#x6539;</p>
-<p>B &#x5217;&#x8868;&#x5143;&#x7D20;&#x6CA1;&#x6709;&#x957F;&#x5EA6;&#x9650;&#x5236;</p>
-<p>C &#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x4E2A;&#x6570;&#x4E0D;&#x9650;</p>
-<p>D &#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x4E00;&#x81F4;</p>
-<p>&#x7B54;&#x6848; D</p>
-<p>&#x4E0B;&#x9762;&#x5173;&#x4E8E;Python&#x5143;&#x7EC4;&#x7C7B;&#x578B;&#xFF0C;&#x4EE5;&#x4E0B;&#x9009;&#x9879;&#x4E2D;&#x63CF;&#x8FF0;&#x9519;&#x8BEF;&#x7684;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A &#x5143;&#x7EC4;&#x4E0D;&#x53EF;&#x4EE5;&#x88AB;&#x4FEE;&#x6539;</p>
-<p>B Python&#x4E2D;&#x5143;&#x7EC4;&#x4F7F;&#x7528;&#x5706;&#x62EC;&#x53F7;&#x548C;&#x9017;&#x53F7;&#x8868;&#x793A;</p>
-<p>C &#x5143;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x8981;&#x6C42;&#x662F;&#x76F8;&#x540C;&#x7C7B;&#x578B;</p>
-<p>D &#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x591A;&#x7EA7;&#x7D22;&#x5F15;&#x83B7;&#x53D6;&#x4FE1;&#x606F;</p>
-<p>&#x7B54;&#x6848;C</p>
-<p>S&#x548C;T&#x662F;&#x4E24;&#x4E2A;&#x96C6;&#x5408;&#xFF0C;&#x5BF9;S&amp;T&#x7684;&#x63CF;&#x8FF0;&#x6B63;&#x786E;&#x7684;&#x662F;&#xFF08;&#xFF09;</p>
-<p>A  S&#x548C;T&#x7684;&#x4EA4;&#x8FD0;&#x7B97;&#xFF0C;&#x5305;&#x62EC;&#x540C;&#x65F6;&#x5728;&#x96C6;&#x5408;S&#x548C;T&#x4E2D;&#x7684;&#x5143;&#x7D20;</p>
-<p>B S&#x548C;T&#x7684;&#x5E76;&#x8FD0;&#x7B97;&#xFF0C;&#x5305;&#x62EC;&#x5728;&#x96C6;&#x5408;S&#x548C;T&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;</p>
-<p>C S&#x548C;T&#x7684;&#x5DEE;&#x8FD0;&#x7B97;&#xFF0C;&#x5305;&#x62EC;&#x5728;&#x96C6;&#x5408;S&#x4F46;&#x4E0D;&#x5728;T&#x4E2D;&#x7684;&#x5143;&#x7D20;</p>
-<p>D S&#x548C;T&#x7684;&#x8865;&#x8FD0;&#x7B97;&#xFF0C;&#x5305;&#x62EC;&#x51E0;&#x4E2A;S&#x548C;T&#x4E2D;&#x7684;&#x975E;&#x76F8;&#x540C;&#x5143;&#x7D20;</p>
-<p>&#x7B54;&#x6848;A</p>
 
                                 
                                 </section>
@@ -856,7 +669,7 @@ print(bSet -aSet)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.3字典类型及操作","level":"1.6.3","depth":2,"next":{"title":"第六章:函数的代码和复用","level":"1.7","depth":1,"path":"第六章/函数的代码和复用.md","ref":"第六章/函数的代码和复用.md","articles":[{"title":"6.1函数的定义与使用","level":"1.7.1","depth":2,"path":"第六章/函数的定义与使用.md","ref":"第六章/函数的定义与使用.md","articles":[]},{"title":"6.2代码复用与函数递归","level":"1.7.2","depth":2,"path":"第六章/代码复用与函数递归.md","ref":"第六章/代码复用与函数递归.md","articles":[]}]},"previous":{"title":"5.2序列类型及操作","level":"1.6.2","depth":2,"path":"第五章/序列类型及操作.md","ref":"第五章/序列类型及操作.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第五章/字典类型及操作.md","mtime":"2021-08-26T13:34:16.980Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-06T02:41:37.321Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.3字典类型及操作","level":"1.6.3","depth":2,"next":{"title":"第六章:函数的代码和复用","level":"1.7","depth":1,"path":"第六章/函数的代码和复用.md","ref":"第六章/函数的代码和复用.md","articles":[{"title":"6.1函数的定义与使用","level":"1.7.1","depth":2,"path":"第六章/函数的定义与使用.md","ref":"第六章/函数的定义与使用.md","articles":[]},{"title":"6.2代码复用与函数递归","level":"1.7.2","depth":2,"path":"第六章/代码复用与函数递归.md","ref":"第六章/代码复用与函数递归.md","articles":[]}]},"previous":{"title":"5.2序列类型及操作","level":"1.6.2","depth":2,"path":"第五章/序列类型及操作.md","ref":"第五章/序列类型及操作.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第五章/字典类型及操作.md","mtime":"2021-09-06T07:23:23.969Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-06T07:25:11.247Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
